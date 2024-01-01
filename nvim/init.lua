@@ -1,2 +1,5 @@
+-- Nvim config and keymaps
 require("config")
-print("Hello world!")
+
+-- Nvim plugins
+require("plugins")
