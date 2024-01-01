@@ -4,6 +4,8 @@ local opt = vim.opt
 -- General
 opt.showcmd = true
 opt.cursorline = true
+opt.number = true
+opt.relativenumber = false
 
 -- Tabs and spaces
 opt.softtabstop = 4
