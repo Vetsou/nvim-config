@@ -6,14 +6,10 @@ require('catppuccin').setup({
     styles = {},
     color_overrides = {
         mocha = {
-            base = '#161A1E',
-            mantle = '#161A1E',
-            crust = '#161A1E',
-            peach = '#C678DD',
-            flamingo = '#C74336',
-            green = '#6ED166',
-            mauve = '#E4AA24',
-            overlay0 = '#717176'
+            base = '#13131f',
+            mantle = '#181841',
+            crust = '#1E1E2E',
+            overlay0 = '#6D6E6E'
         }
     }
 })

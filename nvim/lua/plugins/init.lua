@@ -22,6 +22,27 @@ return require('packer').startup(function(use)
     }
 
     use({ 'catppuccin/nvim', as = 'catppucin'})
+    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+    use('tpope/vim-fugitive')
+
+    use {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v3.x',
+        requires = {        
+            -- LSP Support
+            {'neovim/nvim-lspconfig'},
+
+            --- Language servers from neovim
+            {'williamboman/mason.nvim'},
+            {'williamboman/mason-lspconfig.nvim'},
+
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},
+            {'hrsh7th/cmp-nvim-lsp'},
+            {'hrsh7th/cmp-buffer'},
+            {'hrsh7th/cmp-path'}
+        }
+    }
     -- END PLUGINS
 
     if packer_bootstrap then
